@@ -1,6 +1,10 @@
 * TypeScript 通过类型批注提供静态类型以在编译时启动类型检查。
 * 基本批注类型是number、bool、string。而弱或动态类型是any。
 
+### 编译 ts 文件
+1. 编译单个文件：`tsc file_name.ts`，执行产生的 file_name.js 文件（tsc 命令行上指定输入文件时，tsconfig.json 文件会被忽略）
+2. 编译整个项目：`tsc`（编译器根据 tsconfig.json 指定的编译选项，来编译整个项目）
+
 ### 安装 TypeScript 并运行单个 ts 文件（即：tsc 命令行上指定了输入文件；编译整个项目时，tsc命令不指定输入文件即可）：
 1. 全局安装 TypeScript： `npm install -g typescript`
 2. 将 TypeScript 转换为 JavaScript 代码，在当前目录下（与 file_name.ts 同一目录）生成一个 file_name.js 文件：`tsc file_name.ts`
